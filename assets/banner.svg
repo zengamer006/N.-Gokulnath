@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#03040d"/><stop offset=".55" stop-color="#0a0a2e"/><stop offset="1" stop-color="#1d0740"/></linearGradient>
+<linearGradient id="neon" x1="0" x2="1"><stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+<linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00e5ff" stop-opacity="0"/><stop offset=".5" stop-color="#00e5ff" stop-opacity=".35"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient>
+<filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#3b82f6" stroke-opacity=".13"/></pattern>
+</defs>
+<rect width="1200" height="320" fill="url(#bg)"/>
+<rect width="1200" height="320" fill="url(#grid)"/>
+<!-- circuit traces -->
+<g fill="none" stroke="url(#neon)" stroke-width="2" stroke-dasharray="14 10" opacity=".7">
+<path d="M0 60 H180 L220 100 H420"><animate attributeName="stroke-dashoffset" from="0" to="-96" dur="3s" repeatCount="indefinite"/></path>
+<path d="M0 260 H260 L300 220 H520"><animate attributeName="stroke-dashoffset" from="0" to="-96" dur="4s" repeatCount="indefinite"/></path>
+<path d="M1200 50 H980 L940 90 H760"><animate attributeName="stroke-dashoffset" from="0" to="96" dur="3.5s" repeatCount="indefinite"/></path>
+<path d="M1200 270 H940 L900 230 H700"><animate attributeName="stroke-dashoffset" from="0" to="96" dur="2.8s" repeatCount="indefinite"/></path>
+</g>
+<g fill="#00e5ff" filter="url(#glow)"><circle cx="420" cy="100" r="5"><animate attributeName="r" values="3;7;3" dur="1.6s" repeatCount="indefinite"/></circle><circle cx="520" cy="220" r="5"><animate attributeName="r" values="7;3;7" dur="1.9s" repeatCount="indefinite"/></circle></g>
+<g fill="#a855f7" filter="url(#glow)"><circle cx="760" cy="90" r="5"><animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite"/></circle><circle cx="700" cy="230" r="5"><animate attributeName="r" values="7;3;7" dur="1.4s" repeatCount="indefinite"/></circle></g>
+<!-- HUD corners -->
+<g fill="none" stroke="#00e5ff" stroke-width="3" opacity=".9"><path d="M20 50 V20 H50"/><path d="M1150 20 H1180 V50"/><path d="M20 270 V300 H50"/><path d="M1150 300 H1180 V270"/></g>
+<!-- title -->
+<text x="600" y="30" text-anchor="middle" font-family="Consolas,Menlo,monospace" font-size="13" letter-spacing="6" fill="#67e8f9" opacity=".85">[ SYSTEM ONLINE // AI·IoT·ROBOTICS LAB ]<animate attributeName="opacity" values=".4;1;.4" dur="3s" repeatCount="indefinite"/></text>
+<text x="604" y="156" text-anchor="middle" font-family="Orbitron,Segoe UI,Arial Black,sans-serif" font-weight="900" font-size="82" letter-spacing="8" fill="#ff2bd6" opacity=".55"><animate attributeName="x" values="604;597;606;604" dur="2.4s" repeatCount="indefinite"/>N. GOKULNATH</text>
+<text x="596" y="152" text-anchor="middle" font-family="Orbitron,Segoe UI,Arial Black,sans-serif" font-weight="900" font-size="82" letter-spacing="8" fill="#00e5ff" opacity=".55"><animate attributeName="x" values="596;603;594;596" dur="2.4s" repeatCount="indefinite"/>N. GOKULNATH</text>
+<text x="600" y="154" text-anchor="middle" font-family="Orbitron,Segoe UI,Arial Black,sans-serif" font-weight="900" font-size="82" letter-spacing="8" fill="url(#neon)" filter="url(#glow)">N. GOKULNATH</text>
+<text x="600" y="200" text-anchor="middle" font-family="Consolas,Menlo,monospace" font-size="24" letter-spacing="5" fill="#e0e7ff">ROBOTICS TRAINER  ◆  IoT &amp; EMBEDDED DEVELOPER</text>
+<text x="600" y="240" text-anchor="middle" font-family="Consolas,Menlo,monospace" font-size="17" letter-spacing="3" fill="#c4b5fd">CO-FOUNDER &amp; CEO · SGN ROBOWORKS   |   TOP 1% MENTOR · TOPMATE   |   12 PATENT APPLICATIONS</text>
+<rect x="300" y="262" width="600" height="3" fill="url(#neon)" filter="url(#glow)"><animate attributeName="width" values="100;600;100" dur="4s" repeatCount="indefinite"/><animate attributeName="x" values="550;300;550" dur="4s" repeatCount="indefinite"/></rect>
+<!-- scanner -->
+<rect width="1200" height="60" fill="url(#scan)"><animate attributeName="y" from="-60" to="320" dur="4s" repeatCount="indefinite"/></rect>
+</svg>

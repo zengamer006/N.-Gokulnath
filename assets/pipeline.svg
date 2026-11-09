@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+<defs>
+<linearGradient id="n" x1="0" x2="1"><stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+<filter id="f" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<path id="p" d="M110 125 H1090"/>
+</defs>
+<rect width="1200" height="260" fill="#05060f"/>
+<text x="600" y="28" text-anchor="middle" font-family="Consolas,Menlo,monospace" font-size="13" letter-spacing="6" fill="#67e8f9">[ AIoT SIGNAL PIPELINE · SENSE → THINK → ACT ]</text>
+<line x1="110" y1="125" x2="1090" y2="125" stroke="url(#n)" stroke-width="3" stroke-dasharray="10 8" opacity=".8"><animate attributeName="stroke-dashoffset" from="0" to="-72" dur="2s" repeatCount="indefinite"/></line>
+<g font-family="Consolas,Menlo,monospace" text-anchor="middle">
+<g transform="translate(110 125)"><circle r="46" fill="#0b1030" stroke="#00e5ff" stroke-width="3" filter="url(#f)"/><circle r="8" fill="#00e5ff"><animate attributeName="r" values="5;12;5" dur="1.5s" repeatCount="indefinite"/></circle><circle r="30" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="4 6"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"/></circle></g>
+<text x="110" y="200" font-size="16" font-weight="700" fill="#e0e7ff">SENSE</text><text x="110" y="220" font-size="11" fill="#a5b4fc">Sensors · Vision</text>
+<g transform="translate(355 125)"><rect x="-44" y="-44" width="88" height="88" rx="12" fill="#0b1030" stroke="#a855f7" stroke-width="3" filter="url(#f)"/><g stroke="#a855f7" stroke-width="3"><path d="M-24 -44V-56M0 -44V-56M24 -44V-56M-24 44V56M0 44V56M24 44V56M-44 -24H-56M-44 0H-56M-44 24H-56M44 -24H56M44 0H56M44 24H56"/></g><rect x="-18" y="-18" width="36" height="36" rx="4" fill="#a855f7"><animate attributeName="opacity" values=".4;1;.4" dur="1.2s" repeatCount="indefinite"/></rect></g>
+<text x="355" y="200" font-size="16" font-weight="700" fill="#e0e7ff">MCU</text><text x="355" y="220" font-size="11" fill="#a5b4fc">Arduino · ESP32</text>
+<g transform="translate(600 125)"><rect x="-44" y="-44" width="88" height="88" rx="12" fill="#0b1030" stroke="#00e5ff" stroke-width="3" filter="url(#f)"/><circle cx="-14" cy="-12" r="9" fill="#ef4444" opacity=".85"/><circle cx="14" cy="-12" r="9" fill="#22c55e" opacity=".85"/><circle cx="0" cy="14" r="9" fill="#f43f5e" opacity=".85"/><text y="38" font-size="9" fill="#67e8f9">Pi</text></g>
+<text x="600" y="200" font-size="16" font-weight="700" fill="#e0e7ff">EDGE</text><text x="600" y="220" font-size="11" fill="#a5b4fc">Raspberry Pi · Python</text>
+<g transform="translate(845 125)"><circle r="46" fill="#0b1030" stroke="#a855f7" stroke-width="3" filter="url(#f)"/><g stroke="#00e5ff" stroke-width="2" fill="#00e5ff"><circle cx="-22" cy="-14" r="5"/><circle cx="-22" cy="14" r="5"/><circle cx="0" cy="-22" r="5"/><circle cx="0" cy="0" r="5"/><circle cx="0" cy="22" r="5"/><circle cx="22" cy="0" r="5"/><path d="M-22 -14L0 -22M-22 -14L0 0M-22 14L0 0M-22 14L0 22M0 -22L22 0M0 0L22 0M0 22L22 0" fill="none"><animate attributeName="stroke-opacity" values=".2;1;.2" dur="1.8s" repeatCount="indefinite"/></path></g></g>
+<text x="845" y="200" font-size="16" font-weight="700" fill="#e0e7ff">THINK</text><text x="845" y="220" font-size="11" fill="#a5b4fc">AI/ML · Reinforcement Learning</text>
+<g transform="translate(1090 125)"><circle r="46" fill="#0b1030" stroke="#00e5ff" stroke-width="3" filter="url(#f)"/><path d="M-22 10 a12 12 0 0 1 4 -22 a16 16 0 0 1 30 -2 a11 11 0 0 1 6 24 z" fill="none" stroke="#a855f7" stroke-width="3"/><path d="M0 22V-2M-7 6L0 -2L7 6" stroke="#00e5ff" stroke-width="3" fill="none"><animate attributeName="stroke-opacity" values="1;.2;1" dur="1.2s" repeatCount="indefinite"/></path></g>
+<text x="1090" y="200" font-size="16" font-weight="700" fill="#e0e7ff">ACT · CLOUD</text><text x="1090" y="220" font-size="11" fill="#a5b4fc">Actuators · IoT · IIoT</text>
+</g>
+<circle r="6" fill="#fff" filter="url(#f)"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#p"/></animateMotion></circle>
+<circle r="6" fill="#00e5ff" filter="url(#f)"><animateMotion dur="4s" begin="1.3s" repeatCount="indefinite"><mpath href="#p"/></animateMotion></circle>
+<circle r="6" fill="#a855f7" filter="url(#f)"><animateMotion dur="4s" begin="2.6s" repeatCount="indefinite"><mpath href="#p"/></animateMotion></circle>
+</svg>
